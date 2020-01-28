@@ -1,2 +1,2 @@
-# sodawebmedia-wpbakery
+# SodaWebMedia-WPBakery
  
