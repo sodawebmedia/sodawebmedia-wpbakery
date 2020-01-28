@@ -58,6 +58,18 @@ if ( ! class_exists( 'visual_composer' ) ) {
 			vc_remove_element( 'vc_toggle' );
 			vc_remove_element( 'vc_line_chart' );
 			vc_remove_element( 'vc_posts_slider' );
+			vc_remove_element( 'vc_wp_search' );
+			vc_remove_element( 'vc_wp_meta' );
+			vc_remove_element( 'vc_wp_recentcomments' );
+			vc_remove_element( 'vc_wp_calendar' );
+			vc_remove_element( 'vc_wp_pages' );
+			vc_remove_element( 'vc_wp_tagcloud' );
+			vc_remove_element( 'vc_wp_custommenu' );
+			vc_remove_element( 'vc_wp_text' );
+			vc_remove_element( 'vc_wp_posts' );
+			vc_remove_element( 'vc_wp_categories' );
+			vc_remove_element( 'vc_wp_archives' );
+			vc_remove_element( 'vc_wp_rss' );
 		}
 	}
 	new visual_composer();
