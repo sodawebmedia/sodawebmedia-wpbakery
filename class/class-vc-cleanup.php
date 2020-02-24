@@ -11,22 +11,23 @@
 
 if ( ! defined( 'ABSPATH' ) ) { exit; // Exit if accessed directly.
 }
-if ( ! class_exists( 'visual_composer' ) ) {
-	class visual_composer {
+if ( ! class_exists( 'clean_visual_composer' ) ) {
+	class clean_visual_composer {
 
 		/**
 		 * Constructor
 		 **/
 		public function __construct() {
 			// Remove default VC elements
-			add_action( 'vc_after_init', array( $this, 'setup_vc' ) );
+			add_action( 'init', array( $this, 'setup_clean_vc' ) );
 		}
 
 		/**
 		 * Remove default VC shortcodes and some unused options
 		 **/
-		public function setup_vc() {
-
+		public function setup_clean_vc() {
+			vc_remove_element( 'vc_section ');
+			vc_remove_element( 'vc_gutenberg' );
 			vc_remove_element( 'vc_btn' );
 			vc_remove_element( 'vc_icon' );
 			vc_remove_element( 'vc_zigzag' );
@@ -72,5 +73,5 @@ if ( ! class_exists( 'visual_composer' ) ) {
 			vc_remove_element( 'vc_wp_rss' );
 		}
 	}
-	new visual_composer();
+	new clean_visual_composer();
 }

@@ -1,5 +1,5 @@
 <?php
-/**
+/*
 Plugin Name: Soda Web Media modules for WPBakery
 Description: Theme modules for WPBakery
 Author: Soda Web Media
@@ -14,3 +14,5 @@ if ( ! defined( 'ABSPATH' ) ) { exit; // Exit if accessed directly.
 require_once( 'class/class-vc-cleanup.php' );
 
 //Components
+require_once( 'class/class-vc-blockquote.php');
+
